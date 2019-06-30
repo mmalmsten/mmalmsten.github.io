@@ -1,1 +1,297 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Madeleine Malmsten</title>
+
+        <style>
+            @import url(https://fonts.googleapis.com/css?family=Asap:400,400italic,700|Source+Code+Pro|Architects+Daughter|Open+Sans:100,300,400|Source+Code+Pro);
+            
+            body {
+                color: #212529;
+                font-family: 'Asap', sans-serif;
+            }
+            
+            .app{
+                position: relative;
+                min-height: 100vh;
+                width: 100%;
+            }
+            
+            h1 {
+                font-size: 42px;
+                font-weight: 900;
+                text-transform: uppercase;
+                text-align: center;
+            }
+            .thin {
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 100;
+            }
+            h2 {
+                font-size: 36px;
+                margin: 0;
+                margin-top: 45px;
+                margin-bottom: 10px;
+                font-weight: 900;
+                text-transform: uppercase;
+            }
+            h3 {
+                text-transform: uppercase;
+                font-size: 24px;
+                font-weight: bold;
+                margin: 0;
+                margin-top: 30px;
+            }
+            
+            h4 {
+                text-transform: uppercase;
+                font-size: 16px;
+                font-weight: bold;
+                margin: 0;
+                margin-top: 30px;
+            }
+            a {
+                color: #c99310;
+                text-decoration: none;
+            }
+            a:hover, a:focus, a:active, a:hover .code, a:focus .code, a:active .code {
+                color: #575757 !important;
+            }
+
+            a:hover img {
+                opacity: 0.5;
+            }
+
+            .code, .small-code {
+                color: #c99310;
+                background: transparent;
+                padding: 0;
+                border-radius: 0;
+                font-size: 21px;
+                text-align: center;
+                display: block;
+                font-family: 'Source Code Pro', serif;
+                margin-bottom: 45px;
+                text-transform: none;
+            }
+
+            .text-left{
+                text-align: left;
+            }
+            
+            .small-code {
+                font-size: 12px;
+                text-align: left;
+            }
+
+            .down{
+                height: 60px;
+                fill: rgba(87, 87, 87, 0.2);
+                margin: auto;
+                display: block;
+            }
+            
+            p{
+                line-height: 1.5;
+            }
+            
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+            
+            .content{
+                max-width: 540px;
+                margin: auto;
+                padding: 0 60px;
+            }
+            
+            .content.center{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            .social-div {
+                margin: 60px auto;
+                text-align: center;
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
+                grid-gap: 15px;
+            }
+            .social-div svg, .social-div #speakerdeck {
+                fill: rgba(87, 87, 87, 0.2);
+                -webkit-transition: all 0.3s;
+                transition: all 0.3s;
+            }
+            .social-div #medium:hover {
+                fill: #000;
+            }            
+            .social-div #github:hover {
+                fill: #614381;
+            }
+            .social-div #linkedin:hover {
+                fill: #1ba8e5;
+            }
+            .social-div #speakerdeck:hover {
+                fill: #009287;
+            }
+            .social-div #twitter:hover {
+                fill: #1da1f2;
+            }
+            .social-div #youtube:hover {
+                fill: #e62117;
+            }
+            .social-div #instagram:hover {
+                fill: #125688;
+            }
+            @media (max-width: 767px) {
+                .social-div #medium {
+                    fill: #000;
+                }
+                .social-div #github {
+                    fill: #614381;
+                }
+                .social-div #linkedin {
+                    fill: #1ba8e5;
+                }
+                .social-div #speakerdeck {
+                    fill: #009287;
+                }
+                .social-div #twitter {
+                    fill: #1da1f2;
+                }
+                .social-div #youtube {
+                    fill: #e62117;
+                }
+                .social-div #instagram {
+                    fill: #125688;
+                }
+            }  
+
+            .press{
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+                grid-gap: 10px;
+            }
+            </style>
+
+    </head>
+    <body>
+        <div class="app">
+            <div class="content center">
+                <h1><span class="thin">Madeleine</span> Malmsten</h1>
+                <div class="code"><span id="days">*********</span> seconds of coding</div>
+                <svg class="down" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129"><path d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z"/></svg>
+            </div>
+        </div>
+        <div class="app">
+            <div class="content">
+                <h2>About <span class="thin">me</span></h2>
+                <p>
+                    My name is Madeleine Malmsten, and I’m a developer living in Stockholm, Sweden. Programming has always been part of my life and I’m extra passionate about logic and functional programming. What I love the most is working with projects that matter. Projects that can, direct or indirect, make a difference regarding research, health, sustainability, equality and safety.
+                </p><p>
+                    Open source and open innovation are important to me, and I am enthusiastic about sharing knowledge and contributing to the technology community by writing blog posts, running workshops and speaking at conferences.
+                </p><p>
+                    I’m the kind of person who gets super motivated, rather than discouraged when someone says that something is impossible to do, and I also like to go with the method “the right tool for the job” instead of just choosing the tool at hand.
+                </p>
+
+                <h3>Projects</h3>
+                <a href="https://github.com/mmalmsten" target="_blank">
+                    <div class="small-code">
+                        is_interesting(true) :- visit(github, Info).<br />
+                        is_interesting(_) :- scroll.
+                    </div>
+                </a>
+
+                <h3><span class="thin">Selected</span> assignments</h3>
+                <a href="https://se.linkedin.com/in/madeleine-malmsten-ba744987" target="_blank">
+                    <div class="small-code">Curious ? visit('linkedin') : scroll();</div>
+                </a>
+
+                <h3><span class="thin">In the</span> press</h3>
+                <div class="press">
+                    <a href="https://www.nyteknik.se/innovation/saab-satsar-pa-ny-teknik-for-ridsport-smarta-ridhuset-ska-ge-ryttare-digital-koll-6920953" target="_blank">
+                        <img src="press1.png">
+                    </a>
+                    <a href="https://www.nyteknik.se/bygg/de-flyttar-in-i-det-overvakade-experimenthuset-6577637" target="_blank">
+                        <img src="press2.png">
+                    </a>
+                </div>
+                 
+                <h3>Conference <span class="thin">talks</span></h3>
+                <div class="press">
+                    <a href="https://www.youtube.com/watch?v=WT-dQ1jFSrg" target="_blank">
+                        <img src="codebeamsto.png">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="app">
+            <div class="content center">
+                <h1><span class="thin">Get in</span> touch</h1>
+                <div class="code">contact if send then</div>
+                <div class="contact">
+                    <div class="social-div">
+                        <a href="https://se.linkedin.com/in/madeleine-malmsten-ba744987" target="_blank">
+                            <svg id="linkedin" aria-labelledby="simpleicons-linkedin-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <title id="simpleicons-linkedin-icon">LinkedIn icon</title>
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/mmalmsten" target="_blank">
+                            <svg id="github" aria-labelledby="simpleicons-github-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <title id="simpleicons-github-icon">GitHub icon</title>
+                                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/m.malmsten/" target="_blank">
+                            <svg id="instagram" aria-labelledby="simpleicons-instagram-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <title id="simpleicons-instagram-icon">Instagram icon</title>
+                                <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 10.5s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://speakerdeck.com/mmalmsten/" target="_blank">
+                            <svg viewBox="0 0 32 27">
+                               <g
+                                  style="fill:none;fill-rule:evenodd;stroke:none;stroke-width:1"
+                                  transform="translate(-41,-18)"
+                                  id="Speaker-Deck-Home">
+                                 <path id="speakerdeck" d="M 54.366541,37.5 H 47.25 C 43.79822,37.5 41,34.70178 41,31.25 41,27.79822 43.79822,25 47.25,25 h 8.302632 c 1.380711,0 2.5,1.119288 2.5,2.5 0,1.380712 -1.119289,2.5 -2.5,2.5 H 47.12218 c -0.690356,0 -1.25,0.559644 -1.25,1.25 0,0.690356 0.559644,1.25 1.25,1.25 h 7.116542 c 3.45178,0 6.25,2.79822 6.25,6.25 0,3.45178 -2.79822,6.25 -6.25,6.25 H 43.5 C 42.119288,45 41,43.880712 41,42.5 41,41.119288 42.119288,40 43.5,40 h 10.866541 c 0.690356,0 1.25,-0.559644 1.25,-1.25 0,-0.690356 -0.559644,-1.25 -1.25,-1.25 z m 5.260163,7.5 c 1.662425,-1.124292 2.850603,-2.916504 3.194251,-5 h 4.034474 c 0.678711,0 1.228914,-0.559644 1.228914,-1.25 v -7.5 c 0,-0.690356 -0.550203,-1.25 -1.228914,-1.25 h -7.329113 c 0.583783,-0.663446 0.938759,-1.539557 0.938759,-2.5 0,-0.960443 -0.354976,-1.836554 -0.938759,-2.5 h 8.558027 C 70.799185,25 73,27.238576 73,30 v 10 c 0,2.761424 -2.200815,5 -4.915657,5 z" />
+                               </g>
+                             </svg>
+                        </a>                        
+                        <a href="https://twitter.com/madde" target="_blank">
+                            <svg id="twitter" aria-labelledby="simpleicons-twitter-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <title id="simpleicons-twitter-icon">Twitter icon</title>
+                                <path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://medium.com/@m.malmsten" target="_blank">
+                            <svg id="medium" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+                                <g>
+                                    <rect x="0" y="0" width="256" height="256"></rect>
+                                    <path d="M61.0908952,85.6165814 C61.3045665,83.5054371 60.4994954,81.4188058 58.9230865,79.9979257 L42.8652446,60.6536969 L42.8652446,57.7641026 L92.7248438,57.7641026 L131.263664,142.284737 L165.145712,57.7641026 L212.676923,57.7641026 L212.676923,60.6536969 L198.947468,73.8174045 C197.763839,74.719636 197.176698,76.2025173 197.421974,77.670197 L197.421974,174.391342 C197.176698,175.859021 197.763839,177.341902 198.947468,178.244134 L212.355766,191.407842 L212.355766,194.297436 L144.91283,194.297436 L144.91283,191.407842 L158.802864,177.923068 C160.16778,176.558537 160.16778,176.157205 160.16778,174.070276 L160.16778,95.8906948 L121.54867,193.97637 L116.329871,193.97637 L71.3679139,95.8906948 L71.3679139,161.628966 C70.9930375,164.392788 71.9109513,167.175352 73.8568795,169.174019 L91.9219516,191.086776 L91.9219516,193.97637 L40.6974359,193.97637 L40.6974359,191.086776 L58.7625081,169.174019 C60.6942682,167.172038 61.5586577,164.371016 61.0908952,161.628966 L61.0908952,85.6165814 Z" fill="#FFFFFF"></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="code">info [at] malmsten.eu</div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var days;
+            setInterval(function(){ 
+                days = Math.round((new Date() - new Date('2001-11-20')) / 1000);
+                document.getElementById('days').innerHTML = days;
+            }, 1000);
+        </script>
+    </body>
+</html>
+  
