@@ -16,7 +16,8 @@
             
             .app{
                 position: relative;
-                min-height: 100vh;
+                min-height: 50vh;
+                margin: 10vh auto;
                 width: 100%;
             }
             
@@ -29,6 +30,7 @@
             .thin {
                 font-family: 'Open Sans', sans-serif;
                 font-weight: 100;
+                font-size: 0.95em;
             }
             h2 {
                 font-size: 36px;
@@ -64,6 +66,38 @@
             a:hover img {
                 opacity: 0.5;
             }
+            	        
+	        @media (min-width: 640px) {
+				.about img {
+					float: right;
+					width: 200px;
+					margin-left: 15px;
+					margin-bottom: 15px;
+				}		        
+	        }
+            
+            .grid {
+                margin-top: 60px;
+	        }
+	        
+	        .grid > div {
+                margin-top: 30px;		    
+		    }
+
+	        @media (min-width: 640px) {
+				.grid {
+					display: grid;
+					grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+					grid-gap: 45px;
+				}
+				.grid > div {
+					margin: 0;		    
+				}
+	        }
+	        
+            .grid h3, .grid .small-code {
+                margin: 0;
+            }
 
             .code, .small-code {
                 color: #c99310;
@@ -83,7 +117,7 @@
             }
             
             .small-code {
-                font-size: 12px;
+                font-size: 16px;
                 text-align: left;
             }
 
@@ -104,7 +138,7 @@
             }
             
             .content{
-                max-width: 540px;
+                max-width: 640px;
                 margin: auto;
                 padding: 0 60px;
             }
@@ -173,10 +207,19 @@
                 }
             }  
 
-            .press{
-                display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
-                grid-gap: 10px;
+            .press img {
+	            margin-bottom: 30px;
+            }
+            
+	        @media (min-width: 640px) {            
+				.press{
+					display: grid;
+					grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+					grid-gap: 10px;
+				}
+				.press img {
+					margin: 0;
+				}
             }
             </style>
 
@@ -192,44 +235,54 @@
         <div class="app">
             <div class="content">
                 <h2>About <span class="thin">me</span></h2>
-                <p>
-                    My name is Madeleine Malmsten, and I’m a developer living in Stockholm, Sweden. Programming has always been part of my life and I’m extra passionate about logic and functional programming. What I love the most is working with projects that matter. Projects that can, direct or indirect, make a difference regarding research, health, sustainability, equality and safety.
-                </p><p>
-                    Open source and open innovation are important to me, and I am enthusiastic about sharing knowledge and contributing to the technology community by writing blog posts, running workshops and speaking at conferences.
-                </p><p>
-                    I’m the kind of person who gets super motivated, rather than discouraged when someone says that something is impossible to do, and I also like to go with the method “the right tool for the job” instead of just choosing the tool at hand.
-                </p>
-
-                <h3>Projects</h3>
-                <a href="https://github.com/mmalmsten" target="_blank">
-                    <div class="small-code">
-                        is_interesting(true) :- visit(github, Info).<br />
-                        is_interesting(_) :- scroll.
-                    </div>
-                </a>
-
-                <h3><span class="thin">Selected</span> assignments</h3>
-                <a href="https://se.linkedin.com/in/madeleine-malmsten-ba744987" target="_blank">
-                    <div class="small-code">Curious ? visit('linkedin') : scroll();</div>
-                </a>
-
-                <h3><span class="thin">In the</span> press</h3>
-                <div class="press">
-                    <a href="https://www.nyteknik.se/innovation/saab-satsar-pa-ny-teknik-for-ridsport-smarta-ridhuset-ska-ge-ryttare-digital-koll-6920953" target="_blank">
-                        <img src="press1.png">
-                    </a>
-                    <a href="https://www.nyteknik.se/bygg/de-flyttar-in-i-det-overvakade-experimenthuset-6577637" target="_blank">
-                        <img src="press2.png">
-                    </a>
-                </div>
-                 
-                <h3>Conference <span class="thin">talks</span></h3>
-                <div class="press">
-                    <a href="https://www.youtube.com/watch?v=WT-dQ1jFSrg" target="_blank">
-                        <img src="codebeamsto.png">
-                    </a>
-                </div>
-
+                <div class="about">
+					<img src="madde.jpg">
+					<p>
+						My name is Madeleine Malmsten, and I’m a developer living in Stockholm, Sweden. Programming has always been part of my life and I’m extra passionate about logic and functional programming. What I love the most is working with projects that matter. Projects that can, direct or indirect, make a difference regarding research, health, sustainability, equality and safety.
+					</p>
+					<p>
+						Open source and open innovation are important to me, and I am enthusiastic about sharing knowledge and contributing to the technology community by writing blog posts, running workshops and speaking at conferences.
+					</p>
+					<p>
+						I’m the kind of person who gets super motivated, rather than discouraged when someone says that something is impossible to do, and I also like to go with the method “the right tool for the job” instead of just choosing the tool at hand.
+					</p>
+				</div>
+				<div class="grid">
+					<div>
+						<h3>Projects</h3>
+						<a href="https://github.com/mmalmsten" target="_blank">
+							<div class="small-code">
+								interested(true) :- visit(github, Info).<br />
+								interested(_) :- scroll.
+							</div>
+						</a>
+					</div>
+					<div>
+						<h3><span class="thin">Selected</span> assignments</h3>
+						<a href="https://se.linkedin.com/in/madeleine-malmsten-ba744987" target="_blank">
+							<div class="small-code">curious ? visit('linkedin') : scroll();</div>
+						</a>
+					</div>
+					<div>
+						<h3><span class="thin">In the</span> press</h3>
+						<div class="press">
+							<a href="https://www.nyteknik.se/innovation/saab-satsar-pa-ny-teknik-for-ridsport-smarta-ridhuset-ska-ge-ryttare-digital-koll-6920953" target="_blank">
+								<img src="press1.png">
+							</a>
+							<a href="https://www.nyteknik.se/bygg/de-flyttar-in-i-det-overvakade-experimenthuset-6577637" target="_blank">
+								<img src="press2.png">
+							</a>
+						</div>
+					</div>
+					<div>
+						<h3>Conference <span class="thin">talks</span></h3>
+						<div class="press">
+							<a href="https://www.youtube.com/watch?v=WT-dQ1jFSrg" target="_blank">
+								<img src="codebeamsto.png">
+							</a>
+						</div>
+	            	</div>
+	            </div>
             </div>
         </div>
         <div class="app">
