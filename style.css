@@ -1,0 +1,128 @@
+@import url(https://fonts.googleapis.com/css?family=Asap:400,400italic,700|Source+Code+Pro|Architects+Daughter|Open+Sans:100,300,400|Source+Code+Pro);
+body {
+    color: #212529;
+    font-family: "Asap", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 42px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.thin {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100;
+    font-size: 0.95em;
+}
+
+a {
+    color: #c99310;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active,
+a:hover .code,
+a:focus .code,
+a:active .code {
+    color: #575757 !important;
+}
+
+.code {
+    color: #c99310;
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    font-size: 21px;
+    text-align: center;
+    display: block;
+    font-family: "Source Code Pro", serif;
+    margin-bottom: 45px;
+    text-transform: none;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.content {
+    max-width: 640px;
+    margin: auto;
+    padding: 0 60px;
+}
+
+.social-div {
+    margin: 60px auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-div svg,
+.social-div #speakerdeck {
+    fill: rgba(87, 87, 87, 0.2);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    width: 36px;
+}
+
+.social-div #medium:hover {
+    fill: #000;
+}
+
+.social-div #github:hover {
+    fill: #614381;
+}
+
+.social-div #linkedin:hover {
+    fill: #1ba8e5;
+}
+
+.social-div #speakerdeck:hover {
+    fill: #009287;
+}
+
+.social-div #twitter:hover {
+    fill: #1da1f2;
+}
+
+.social-div #youtube:hover {
+    fill: #e62117;
+}
+
+.social-div #instagram:hover {
+    fill: #125688;
+}
+
+@media (max-width: 767px) {
+    .social-div #medium {
+        fill: #000;
+    }
+    .social-div #github {
+        fill: #614381;
+    }
+    .social-div #linkedin {
+        fill: #1ba8e5;
+    }
+    .social-div #speakerdeck {
+        fill: #009287;
+    }
+    .social-div #twitter {
+        fill: #1da1f2;
+    }
+    .social-div #youtube {
+        fill: #e62117;
+    }
+    .social-div #instagram {
+        fill: #125688;
+    }
+}
